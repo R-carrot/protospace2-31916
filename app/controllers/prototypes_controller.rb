@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   protect_from_forgery
-  before_action :authenticate_user!, only: [:edit, :destroy, :update, :create]
+  before_action :authenticate_user!, only: [:edit, :destroy, :update, :create, :new]
   before_action :move_to_root_path, only: [:edit, :update, :destroy]
 
   def index
